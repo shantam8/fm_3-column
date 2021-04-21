@@ -17,6 +17,13 @@ body {
   width: 327px;
 }
 
+@media screen and (min-width: 400px) {
+  .outerBox {
+    width: 830px;
+    background-color: yellow;
+  }
+}
+
 .outerBox .innerBox {
   padding: 47px;
 }
