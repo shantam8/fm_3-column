@@ -1,0 +1,77 @@
+@import "colors";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: $veryLightGray;
+}
+
+.outerBox {
+  margin: 88px 24px;
+  width: 327px;
+
+  .innerBox {
+    padding: 47px;
+
+    .title {
+      margin-top: 32px;
+      font-family: "Big Shoulders Display", cursive;
+      font-size: 32px;
+      color: $veryLightGray;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 32px;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 12px;
+      line-height: 26px;
+      color: $transparentWhite;
+    }
+
+    .button {
+      width: 146px;
+      height: 48px;
+      margin-top: 32px;
+      background-color: $veryLightGray;
+      font-family: "Lexend Deca", sans-serif;
+      border-radius: 24px;
+      text-align: center;
+      padding-top: 14px;
+    }
+  }
+
+  .sedan {
+    background-color: $brightOrange;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    .button {
+      color: $brightOrange;
+    }
+  }
+
+  .suv {
+    background-color: $darkCyan;
+
+    .button {
+      color: $darkCyan;
+    }
+  }
+
+  .luxury {
+    background-color: $veryDarkCyan;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .button {
+      color: $veryDarkCyan;
+    }
+  }
+}

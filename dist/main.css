@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.outerBox {
+  margin: 88px 24px;
+  width: 327px;
+}
+
+.outerBox .innerBox {
+  padding: 47px;
+}
+
+.outerBox .innerBox .title {
+  margin-top: 32px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 32px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.outerBox .innerBox p {
+  margin-top: 32px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.outerBox .innerBox .button {
+  width: 146px;
+  height: 48px;
+  margin-top: 32px;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 24px;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.outerBox .sedan {
+  background-color: #e38826;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.outerBox .sedan .button {
+  color: #e38826;
+}
+
+.outerBox .suv {
+  background-color: #006970;
+}
+
+.outerBox .suv .button {
+  color: #006970;
+}
+
+.outerBox .luxury {
+  background-color: #004241;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.outerBox .luxury .button {
+  color: #004241;
+}
+/*# sourceMappingURL=main.css.map */
