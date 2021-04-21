@@ -13,16 +13,23 @@ body {
 }
 
 .outerBox {
-  margin: 88px 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 88px auto;
   width: 327px;
 
-  @media screen and (min-width: 400px){
-    width: 830px;
-    background-color: yellow;
+  @media screen and (min-width: 1440px){
+    margin: 164px auto;
+    width: 831px;
+    flex-direction: row;
   }
 
   .innerBox {
     padding: 47px;
+
+    @media screen and (min-width:1440px) {
+      width: 277px;
+    }
 
     .title {
       margin-top: 32px;
@@ -49,6 +56,12 @@ body {
       border-radius: 24px;
       text-align: center;
       padding-top: 14px;
+
+      &:hover{
+        color: $veryLightGray;
+        background-color: transparent;
+        outline: 2px solid $veryLightGray;
+      }
     }
   }
 
@@ -56,6 +69,11 @@ body {
     background-color: $brightOrange;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+
+    @media screen and (min-width:1440px) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 8px;
+    }
 
     .button {
       color: $brightOrange;
@@ -74,6 +92,11 @@ body {
     background-color: $veryDarkCyan;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+
+    @media screen and (min-width:1440px) {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 8px;
+    }
 
     .button {
       color: $veryDarkCyan;

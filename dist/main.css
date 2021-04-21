@@ -13,19 +13,36 @@ body {
 }
 
 .outerBox {
-  margin: 88px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 88px auto;
   width: 327px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1440px) {
   .outerBox {
-    width: 830px;
-    background-color: yellow;
+    margin: 164px auto;
+    width: 831px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .outerBox .innerBox {
   padding: 47px;
+}
+
+@media screen and (min-width: 1440px) {
+  .outerBox .innerBox {
+    width: 277px;
+  }
 }
 
 .outerBox .innerBox .title {
@@ -55,10 +72,23 @@ body {
   padding-top: 14px;
 }
 
+.outerBox .innerBox .button:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  outline: 2px solid #f2f2f2;
+}
+
 .outerBox .sedan {
   background-color: #e38826;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .outerBox .sedan {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
 }
 
 .outerBox .sedan .button {
@@ -77,6 +107,13 @@ body {
   background-color: #004241;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .outerBox .luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
 }
 
 .outerBox .luxury .button {
